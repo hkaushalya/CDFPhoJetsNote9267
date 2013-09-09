@@ -1,0 +1,6 @@
+Many new physics models predict mechanisms that could produce a γ and jets signature. We 
+search in the γ + jets and γ + jets +  ET channels, independent of any model, for new physics using 4.8 fb−1 of CDF Run II data collected at the Fermilab Tevatron from p ¯ p collisions at 
+√s = 1.96 TeV. A variety of techniques are applied to estimate the standard model expectation 
+and non-collision backgrounds. We examine several kinematic distributions including / 
+ET , ΣET , and invariant masses for discrepancies with the standard model.  
+

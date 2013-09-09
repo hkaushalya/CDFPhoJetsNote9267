@@ -1,0 +1,125 @@
+% LaTex document
+%\pagelayout{normal}
+%\input epsf
+
+\documentclass[11pt]{article}
+\usepackage{rotating}
+\usepackage{epsfig}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{lineno}
+\usepackage{feynmp}
+\usepackage{colortbl}
+\topmargin -0.5in
+\oddsidemargin 0in
+\evensidemargin 0in
+\textheight 8.9in
+\textwidth 6.50in
+\parskip 3pt plus 1pt minus 0.5pt
+
+
+\graphicspath{/Users/samantha/apsnote/PDFS/}
+
+%insert line number for proof reading. comment out these when making the final pdf
+\linenumbers
+\leftlinenumbers*
+
+\begin{document}
+\begin{flushright}
+CDF/ANAL/EXOTIC/CDFR/9267 \\
+Version 0.3 \\
+%\rm \today
+\vspace*{-0.2truein}
+\end{flushright}
+
+\def\sla#1{\rlap{\kern .15em /}#1}
+
+\newcommand{\w}{\mbox{$W$}\xspace}
+\newcommand{\z}{\mbox{$Z$}\xspace}
+\newcommand{\zee}{\mbox{$Z\rightarrow e^+e^-$}\xspace}
+\newcommand{\zmm}{\mbox{$Z\rightarrow \mu^+\mu^-$}\xspace}
+\newcommand{\ztt}{\mbox{$Z\rightarrow \tau^+\tau^-$}\xspace}
+\newcommand{\wen}{\mbox{$W\rightarrow e+\nu$}\xspace}
+\newcommand{\wmn}{\mbox{$W\rightarrow \mu+\nu$}\xspace}
+\newcommand{\wtn}{\mbox{$W\rightarrow \tau+\nu$}\xspace}
+
+\newcommand{\zgee}{\mbox{$Z/\gamma^*\rightarrow e^+e^-$}\xspace}
+\newcommand{\W}{\mbox{$W^\pm$}\xspace}
+\newcommand{\Wenu}{\mbox{$W^\pm\rightarrow e^\pm\nu$}\xspace}
+\newcommand{\wenu}{\mbox{$W\rightarrow e\nu$}\xspace}
+\newcommand{\wmnu}{\mbox{$W\rightarrow \mu\nu$}\xspace}
+\newcommand{\wtnu}{\mbox{$W\rightarrow \tau\nu$}\xspace}
+
+\newcommand{\pt}{\mbox{$p_T$}\xspace}
+\newcommand{\Ht}{\mbox{$H_T$}\xspace}
+\newcommand{\et}{\mbox{$E_T$}\xspace}
+\newcommand{\etcorr}{\mbox{$E_T^{corr}$}\xspace}
+\newcommand{\ecorr}{\mbox{$E^{corr}$}\xspace}
+\newcommand{\met}{\mbox{$\sla{E}_T$}\xspace}
+\newcommand{\eoverp}{\mbox{$E/p$}\xspace}
+\newcommand{\isoetcorr}{\mbox {$E_ {T}^{Iso(corr)}$\xspace }}
+%\newcommand{\gammajets}{\mbox{$\gamma$  + $\gt\eq$1~jets + $\met$}}
+%text formatting
+\newcommand{\superscript}[1]{\ensuremath{^\textrm{#1}}}
+\newcommand{\subscript}[1]{\ensuremath{_\textrm{#1}}}
+%\newcommand{\th}[0]{\superscript{th}}
+%\newcommand{\st}[0]{\superscript{st}}
+%\newcommand{\nd}[0]{\superscript{nd}}
+%\newcommand{\rd}[0]{\superscript{rd}}
+%\newcommand{\halojets}{\mbox{{$\gammma^{Halo}~+~jets$}\xspace}}
+\newcommand{\phojets}{\mbox{$\gamma$ + jets}\xspace}
+\newcommand{\phoonejet}{\mbox{$\gamma$ + $\geq$1 jet}\xspace}
+\newcommand{\photwojet}{\mbox{$\gamma$ + $\geq$2 jets}\xspace}
+\newcommand{\phojetsmet}{\mbox{\phojets + \met}\xspace}
+\newcommand{\elejets}{\mbox{$\gamma^{e\rightarrow\gamma}$ + jets}\xspace}
+\newcommand{\cosmicjets}{\mbox{$\gamma^{cosmic}$ + jets}\xspace}
+\newcommand{\halojets}{\mbox{$\gamma^{halo}$ + jets}\xspace}
+\newcommand{\pbi}{\mbox{pb$^{-1}$}\xspace}
+\newcommand{\pho}{\mbox{$\gamma$}\xspace}
+\newcommand{\intimewindow}{\mbox{$-4.8$~ns $< t <$ +4.8~ns}\xspace}
+\newcommand{\cosmictimewindow}{\mbox{+30~ns $< t <$ +90~ns}\xspace}
+\newcommand{\etg}[1]{\mbox{$\et >$ #1~GeV}\xspace}
+\newcommand{\timewindow}[2]{\mbox{$#1$~ns$~< t <#2$~ns}\xspace}
+
+\title{Search for Anomalous Production of Photon + Jets + \met}
+\author{Samantha Hewamanage, Jay Dittmann, Nils Krumnack\\
+    {\it Baylor University} \\
+    \\
+Raymond Culbertson, Sasha Pronko \\
+    {\it Fermilab} \\
+}
+
+\def\newpage{\par\penalty 100} % hack \newpage
+\maketitle
+\def\newpage{\par\vfill\penalty -10000} % restore
+
+
+%%%%%%%%%%%%%%%%%%%% Background Summary %%%%%%%%%%%%%
+\begin{table}[h!]
+\begin{center}
+\begin{tabular} {|c|c|c|}
+\hline
+\bf{Background} & \bf{Expected for $\geq$1 Jet} & \bf{Expected for $\geq$2 Jets} \\
+\hline
+SM Photon  			& 2.6M & 650K \\
+\hline
+QCD					& 1M & 280K \\
+\hline
+EWK					& 5K & 1K \\
+\hline
+Cosmic 				& 110 & 7 \\
+\hline
+Beam Halo			& 9 & $\le$1\\
+\hline
+PMT Spikes  		  	&  0 	 & 0 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Summary of background estimates.}
+%\label{tab:bgsummary}
+\end{table}
+
+\end{document}
+
+%%%
